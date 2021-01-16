@@ -24,8 +24,13 @@ class OrderCard extends StatelessWidget {
           padding: const EdgeInsets.all(10.0),
           child: Container(
             height: height,
-            decoration: BoxDecoration(
-                color: Colors.white, borderRadius: BorderRadius.circular(10)),
+            decoration: BoxDecoration(boxShadow: [
+              BoxShadow(
+                  color: Colors.grey,
+                  offset: const Offset(0.5, 0.5),
+                  blurRadius: 10,
+                  spreadRadius: 2)
+            ], color: Colors.white, borderRadius: BorderRadius.circular(10)),
             child: Row(
               children: [
                 Padding(
@@ -89,6 +94,8 @@ class OrderCard extends StatelessWidget {
             ),
           ),
         ),
+
+        // Confirmed Shape drawn with CustomPainter
         Positioned(left: 10, top: height / 5, child: Trial())
       ],
     );
