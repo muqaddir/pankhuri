@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       height: 20,
                     ),
 
-                    //A new widge for the order details with not hardcoded data
+                    //A new widget for the order details with not hardcoded data
 
                     OrderCard(
                       url:
