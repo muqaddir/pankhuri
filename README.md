@@ -1,2 +1,3 @@
 # pankhuri
- Assignment Number -1 
+ 
+ I've not used MediaQuery , the height and width doesn't change.
